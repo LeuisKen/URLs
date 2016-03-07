@@ -70,6 +70,35 @@
  - [解读redux工作原理](https://segmentfault.com/a/1190000004236064)
  - [Redux系列](http://www.cnblogs.com/chyingp/p/)
  - [深入到源码：解读 redux 的设计思路与用法](http://div.io/topic/1309)
+ - [CSS文件动态加载（续）—— 残酷的真相](http://www.cnblogs.com/chyingp/archive/2013/03/03/how-to-judge-if-stylesheet-loaded-successfully.html)
+ - [Nodejs 制作命令行工具](http://jslite.io/2015/06/19/Nodejs-%E5%88%B6%E4%BD%9C%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7/)
+ - [happypoulp/redux-tutorial](https://github.com/happypoulp/redux-tutorial)
+ - [[译]看这些文章，足够你学好redux](https://segmentfault.com/a/1190000004212752)
+ - [前端编程提高之旅（十二）----position置入值应用](http://blog.csdn.net/yingyiledi/article/details/41120189)
+ - [reactjs/react-redux](https://github.com/reactjs/react-redux)
+ - [ggordan/react-infinite-grid](https://github.com/ggordan/react-infinite-grid)
+ - [Hello Sea.js](http://island205.github.io/HelloSea.js/index.html)
+ - [jsPerf — JavaScript performance playground](http://jsperf.com/)
+ - [前端工程师需要明白的「浏览器渲染」](http://www.jianshu.com/p/e305ace24ddf)
+ - [react-webpack-cookbook](https://fakefish.github.io/react-webpack-cookbook/index.html)
+ - [electron](http://electron.atom.io/)
+ - [why-do-browsers-match-css-selectors-from-right-to-left](http://stackoverflow.com/questions/5797014/why-do-browsers-match-css-selectors-from-right-to-left/5813672#5813672)
+ - [夜深人静写算法（1）：搜索入门](http://blog.jobbole.com/96312/)
+ - [七步从AngularJS菜鸟到专家（4和5）：指令和表达式](http://blog.jobbole.com/50022/)
+ - [为现代JavaScript开发做好准备](http://blog.jobbole.com/66135/)
+ - [前端组件化开发实践](http://web.jobbole.com/82689/)
+ - [2016年你应该学习的语言和框架](http://wx.h5.vc/post/translations/2015-12-14)
+ - [Javascript Cheat Sheet](http://overapi.com/javascript)
+ - [React 入门教程](https://www.gitbook.com/book/hulufei/react-tutorial/details)
+ - [[Javascript] ES6 Generator基礎](http://huli.logdown.com/posts/292331-javascript-es6-generator-foundation)
+ - [Web动画：学习使用API](http://www.w3cplus.com/animation/web-animations-learning-to-love-the-api.html)
+ - [前端知识普及之页面加载](https://segmentfault.com/a/1190000004466407)
+ - [[Javascript] Promise, generator, async與ES6](http://huli.logdown.com/posts/292655-javascript-promise-generator-async-es6)0
+ - [DotHide/angular2-quickstart](https://github.com/DotHide/angular2-quickstart)
+ - [大型 JavaScript 应用架构中的模式](http://nuysoft.com/2013/08/13/large-scale-javascript/)
+ - [使用JavaScript进行基本图形操作与处理](http://www.ituring.com.cn/article/121428)
+ - [cycle.js](http://cycle.js.org/)
+ - [Why I No Longer Use MVC Frameworks](http://www.infoq.com/articles/no-more-mvc-frameworks)
 
 ##后端资源
  - [Node.js实现PDF文件转HTML](http://blog.yourtion.com/nodejs-convert-pdf-to-html.html)
@@ -82,7 +111,6 @@
  - [正则表达式30分钟入门教程](http://deerchao.net/tutorials/regex/regex.htm)
 
 ## 其他文摘
- - [在Ubuntu Linux下怎样安装QQ](http://cuiqingcai.com/349.html)
  - [Go语言文档](http://docscn.studygolang.com/doc/)
  - [白话经典算法系列](http://www.cnblogs.com/morewindows/category/314533.html)
  - [Vim Cheat Sheet](http://vim.rtorr.com/lang/zh_cn/)
@@ -93,6 +121,9 @@
  - [麻省理工（MIT）牛人解说数学体系](http://blog.jobbole.com/94591/#comment-154391)
  - [微信调试工具](http://blog.qqbrowser.cc/)
  - [语义化版本 2.0.0](http://semver.org/lang/zh-CN/)
+ - [DECO](https://www.decosoftware.com/)
+ - [Data Structures & Algorithms](http://www.cnblogs.com/yangecnu/category/548373.html)
+ - 
 
 ##技术博客
  - [Xiaoho](http://xiaoho.com/)
@@ -122,6 +153,7 @@
  - [淘宝前端团队](http://taobaofed.org/)
  - [沫鱼的前端世界](http://www.cnblogs.com/mofish/)
  - [efe](http://efe.baidu.com/)
+ - [美团点评技术团队](http://tech.meituan.com/)
 
 ##常用网站
  - [博客园](http://www.cnblogs.com/)
@@ -134,6 +166,8 @@
  - [正则表达式解析](http://regexper.com/)
  - [Highcharts中文网](http://www.hcharts.cn/index.php)
  - [css3pie](http://css3pie.com/)
+ - [json-generator](http://beta.json-generator.com/)
+ - [egghead.io](https://egghead.io/)
 
 ##WEB工具推荐-By Vizards
  - [SM.MS - https图床](https://sm.ms/)
