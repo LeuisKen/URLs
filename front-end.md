@@ -71,7 +71,7 @@
 
 相关资料：
 
- - 《JavaScript设计模式与开发实践》
+ - [JavaScript设计模式与开发实践](https://book.douban.com/subject/26382780/)
  - [常用的Javascript设计模式](http://web.jobbole.com/29454/)
 
 ### 函数式
@@ -133,12 +133,18 @@ JavaScript能有今天的发展跟V8是脱不了关系的。很多讲解JavaScri
 
 很多前端同学应该都是从这个地方入的坑吧。关于HTML和CSS的技巧，我觉得现在自己已经在某种程度上生疏了，毕竟很久没有自己写过了。
 
-其实这个领域曾经带给我很多乐趣，黑科技在某种程度上讲要比JavaScript多很多，而且也是和浏览器兼容的斗争最紧张的地方。
+其实这个领域曾经带给我很多乐趣，黑科技在某种程度上讲要比JavaScript多很多，而且也是和浏览器兼容的斗争最紧张的地方。如果想了解一些黑科技的话，建议阅读[张鑫旭的博客](http://www.zhangxinxu.com/)，读下来肯定会很有收获。
+
+下面是我觉得很有意思的几篇文章：
+
+ - [小tips: 使用&#x3000;等空格实现最小成本中文对齐](http://www.zhangxinxu.com/wordpress/2015/01/tips-blank-character-chinese-align/)
+ - [CSS3 pointer-events:none应用举例及扩展](http://www.zhangxinxu.com/wordpress/2011/12/css3-pointer-events-none-javascript/)
+ - [CSS中的负边距](https://segmentfault.com/a/1190000005856540)
+ - [CSS之BFC详解](http://www.html-js.com/article/1866)
 
 学习CSS的话，推荐下面这些材料：
 
  - 《精通CSS（第2版）》
- - 张鑫旭的博客：[http://www.zhangxinxu.com/](http://www.zhangxinxu.com/)
  - w3cplus[http://www.w3cplus.com/](http://www.w3cplus.com/)
  - 前端乱炖[http://www.html-js.com/](http://www.html-js.com/)
 
@@ -173,23 +179,19 @@ JavaScript能有今天的发展跟V8是脱不了关系的。很多讲解JavaScri
 
 ### 构建
 
-构建一般是使用webpack来进行，依靠各种强大的loader，可以完成一系列功能。
+构建一般是使用webpack来进行，依靠各种强大的loader，可以完成一系列功能。强烈建议结合`npm script`管理项目的命令。
 
 相关资料：
 
  - [React Webpack 小书](http://fakefish.github.io/react-webpack-cookbook/)
- - [Webpack傻瓜指南（三）和React配合开发](https://zhuanlan.zhihu.com/p/2052248)
  - [webpack使用优化](http://www.alloyteam.com/2016/01/webpack-use-optimization/)
  - [如何 10 倍提高你的 Webpack 构建效率](http://eternalsky.me/ru-he-10-bei-ti-gao-ni-de-webpack-gou-jian-xiao-lu/)
-
-如果上面看着迷糊，希望找一个配置好的东西直接拿来用，我推荐使用`atool-build`，无论你是ES6、React还是TypeScript，都已经配置好了。可以先用着，明白怎么回事以后，再开始搞自己的`webpack.config`。
-
- - [Ant-Tool](http://ant-tool.github.io/index.html)
 
 ### 调试
 
 我最常用的工具应该就是Chrome Dev Tools了：
 
+ - [Chrome DevTools 官方文档](https://developer.chrome.com/devtools)
  - [Chrome开发者工具系列](http://www.cnblogs.com/constantince/category/712675.html)
  - [chrome 控制台使用指南](http://frontenddev.org/column/chrome-development-tools-using-guide/)
  - [Chrome开发者工具之JavaScript内存分析](http://www.open-open.com/lib/view/open1421734578984.html)
@@ -207,11 +209,13 @@ JavaScript能有今天的发展跟V8是脱不了关系的。很多讲解JavaScri
  - [廖雪峰的Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
  - [基于git的源代码管理模型——git flow](http://www.ituring.com.cn/article/56870)
  - [我的提交信息规范](http://yanhaijing.com/git/2016/02/17/my-commit-message/)
+ - [多 SSH Key 管理技巧与 Git 多账户登录问题](http://www.barretlee.com/blog/2016/03/09/config-in-ssh-after-troubling-git-connection/)
 
 ### 测试
 
+前端测试其实是一件比较痛苦的事情，单元测试还好，UI测试就很麻烦了。而且我也没有很好的测试习惯，这一部分可能要亏待大家了。
 
-
+不过，在很多成熟的Github项目上，你都能看到一个叫test的文件夹，在这里面你可以看到项目开发人员所写的测试，学习测试的写法。
 
 ## 工程问题
 
@@ -219,50 +223,221 @@ JavaScript能有今天的发展跟V8是脱不了关系的。很多讲解JavaScri
 
 前端性能问题，很难在写的时候就全都避免，一般都是在开发完成的测试阶段遇到问题后逐步排查的，总会多少经历一个迭代的过程。
 
-相关资料推荐：
+影响前端性能的问题有很多，比如网络速度太慢会影响首屏时间；代码的一些写法也会影响到浏览器的渲染；还有一点我觉得很值得注意的就是内存泄漏。相关的议题都有很多工具去处理，如果前面Chrome开发者工具部分有好好研究的话，现在对性能问题应该也有一些心得了。
+
+关于渲染：
+
+ - [渲染性能](https://github.com/sundway/blog/issues/2)
+
+关于资源加载：
+
+ - [大公司里怎样开发和部署前端代码？](https://www.zhihu.com/question/20790576)
+
+关于内存泄漏：
+
+ - [js内存泄漏常见的四种情况](https://segmentfault.com/a/1190000004896090)
+
+其他资料推荐：
 
  - [JavaScript 性能优化杀手](http://dev.zm1v1.com/2015/08/19/javascript-optimization-killers/)
  - [编写高性能JavaScript](http://www.alloyteam.com/2012/11/performance-writing-efficient-javascript/)
- - [渲染性能](https://github.com/sundway/blog/issues/2)
  - [了解 JavaScript 应用程序中的内存泄漏](http://www.ibm.com/developerworks/cn/web/wa-jsmemory/)
- - [js内存泄漏常见的四种情况](https://segmentfault.com/a/1190000004896090)
  - [搞定JavaScript内存泄漏](https://boke.io/gao-ding-nei-cun-xie-lou/)
 
 ### 安全
 
+前端代码没有秘密，毕竟就算混淆也是看的到的。但是，一些安全上的失误，还是会造成不小的影响。可以看看下面这些事件：
 
- - [事件还原：一封QQ恶意邮件，导致Apple ID密码丢失](http://www.freebuf.com/vuls/85053.html)
  - [一个 JSON 跨域获得数据漏洞的分析](http://ju.outofmemory.cn/entry/62159)
- - []()
+ - [事件还原：一封QQ恶意邮件，导致Apple ID密码丢失](http://www.freebuf.com/vuls/85053.html)
+ - [关于恶意说说自动在QQ空间转发的机制](https://zsy.blog.ustc.edu.cn/archives/133)
+ - [前端XSS高阶玩法](http://www.alloyteam.com/2014/11/qian-duan-xss-gao-jie-wan-fa/)
+
+对于安全的具体学习，推荐大家阅读：
+
+ - [Web前端黑客技术揭秘](https://book.douban.com/subject/20451827/)
+ - [白帽子讲Web安全](https://book.douban.com/subject/10546925/)
 
 ### 监控
+
+一般来说，测试没有错不代表上线没有错。尤其是现在可以接入网络的设备越来越多，加上本来就很多的浏览器，测试环境几乎是不可能完美模拟线上的环境的。因此，对错误进行监控就非常重要。
+
+关于前端监控，目前也没有特别完善的解决方案，给出两篇文章供大家参考：
+
+ - [前端代码异常日志收集与监控](http://www.cnblogs.com/hustskyking/p/fe-monitor.html)
+ - [构建web前端异常监控系统–FdSafe](http://www.aliued.cn/2012/10/27/%E6%9E%84%E5%BB%BAweb%E5%89%8D%E7%AB%AF%E5%BC%82%E5%B8%B8%E7%9B%91%E6%8E%A7%E7%B3%BB%E7%BB%9F-fdsafe.html)
 
 ## 业务场景
 
 ### PC端
 
+传统的PC端场景，如果不考虑老式浏览器的话，其实是很美好的。目前大部分PC端的业务，如果是针对普通用户的话，一般会兼容到IE8。有特殊需要的（如政府网站），会要求兼容到IE7（甚至更低）。如果是针对企业用户或者内部用户的话，其实就可以开开心心的不考虑兼容了。相信很多同学都是从PC端业务开始的，应该都比较熟悉，就不多说了。
+
+为了方便大家的调试，这里我分享一下微软良心出品：
+
+- [微软各版本IE虚拟机](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)
+
 ### 移动端
+
+关于移动端的开发，会涉及很多新的问题，可以先看看下面这篇文章了解一下大概的特点：
+
+ - [无线Web开发者指南](https://github.com/semious/guide/blob/master/mobile_exp.md)
+
+其实最实用的就是，主要考虑webkit、rem和flex都可以用。这个我认为是和PC端最大的区别。
+
+移动端开发现在也已经有了很长一段时间，也有许多团队分享了相关的经验：
+
+ - [移动web问题小结](http://www.alloyteam.com/2015/06/yi-dong-web-wen-ti-xiao-jie/)
+ - [手机淘宝的flexible设计与实现](http://www.html-js.com/article/2402)
+
+移动端和PC另一个很大的不同就是调试，真机调试是必不可少的环节，也有许多相关的解决方案：
+
+ - [移动开发真机调试](http://www.cnblogs.com/constantince/p/4711098.html)
+ - [微信调试工具](http://blog.qqbrowser.cc/)
 
 ### 细分场景
 
+针对终端对业务场景进行分类仅仅是一种方法，其他时候，还有许多细节的场景需要我们去分析，仅就我个人经验谈一下我所知的几种场景：
+
+#### 纯静态展示页面
+
+建议使用jQuery（移动端Zepto）进行开发，主要任务是切图，一般公司首页这种比较多。
+
+#### 企业后台
+
+用React做这类项目我认为是非常合适的。组件好分，逻辑清楚，样式、兼容性也不用太在意，主要靠UI框架。
+
+#### H5动画（广告）
+
+有一个H5动画惊艳了我，让我见到了这一类项目的潜力。[罗斯·决不凋谢](http://drose6.adidasevent.com/)，请在移动端（或模拟环境）打开。
+
+看到这个项目之后，从代码注释中发现了作者并大概看了一下作者的一系列项目，感觉这个方向也是自有一套东西的（对于只关注于业务开发的我，像发现了新大陆一样）。作者是[@shrekshrek](https://github.com/shrekshrek)，有兴趣的同学可以关注一下。
+
+相关文章推荐：
+
+ - [前端动画原理与实现](http://matrix.h5jun.com/slide/show?id=117#/)
+ - [缓动函数速查表](http://easings.net/zh-cn)
+ - [JavaScript基于时间的动画算法](https://github.com/livoras/blog/issues/8)
+
+#### 游戏
+
+对于这个领域，我就更是陌生了。如果有同学愿意赐教，感激不尽。
+
 ## 面试
+
+面试这件事是围绕人来的，主要的因素也在人。听过一句话，大意是：面试就是在寻找将来的同事。我认为，面试就是对自己的表达，需要一种表达的能力在里面，会表达的人，总是会占据很大的优势。
+
+面试是需要准备的，我认为，面试的积累体现在三方面，也是我接下来希望阐述的三方面：
+
+ - 试题的积累
+ - 项目的积累
+ - 思考的积累
 
 ### 试题的积累
 
+试题的积累是肯定要做的，因为很多时候，在初筛和一面这种基数很大的情况时，直接用题目来筛掉一波人是很有效率的行为。前端的试题，网上能找到很多，有一些很套路，也有一些很个性。不过考察JavaScript，肯定会问一些闭包、this相关的问题；考察CSS，居中的上镜率就很高；考察兼容，肯定离不开各种奇葩浏览器的hack。有一些小众的东西，可能你没有在项目里面用过，但是面试官如果问到了，且在常见问题中，那你就吃亏了。所以，准备是肯定要做的。
+
+相关资源推荐：
+
+ - [前端开发面试题](https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions)
+
 ### 项目的积累
+
+面试中另一个常见问题就是，你做过什么项目。我觉得针对这个问题的话，重点要体现这个项目的特点（展示你对需求的理解能力和分析能力）以及你在这个项目中解决了什么问题（展示你解决问题的能力）。项目应该具有一定的复杂度，如果你在上家公司主要是切图的话，要么就谈谈你对CSS相关的积累，或者直接就谈一些自己做的有一定复杂度的项目（还能展示你自学的能力和动力）。按照这个思路来的话，应该问题不大。
 
 ### 思考的积累
 
-## 前瞻
+我觉得着应该是开发者的一种修养，也是开发者核心价值的一种体现。思考框架背后的东西，思考设计背后的东西，以及，广泛的阅读。
+
+相关书籍推荐：
+
+ - [人月神话](https://book.douban.com/subject/2230248/)
+ - [数学之美 （第二版）](https://book.douban.com/subject/26163454/)
+ - [黑客与画家](https://book.douban.com/subject/6021440/)
 
 ## 其他
 
 ### 提问
 
+一般在技术群里面，不懂提问浪费时间的人真是太多了。希望能够静下心来阅读张鑫旭的[如何提问才能进阶成为前端大神？](http://www.zhangxinxu.com/wordpress/2015/05/how-to-ask-web-front-question/)。节省别人的时间也是节省自己的时间。
+
+其实很多时候，大家只要把最小可复现bug的线上demo做出来，说不定就已经不需要提问了。
+
+### 获取学习资源
+
+开发人员的时间非常宝贵（因为大家都很忙）。所以，阅读文章一定要精，多了根本看不过来。
+
+我现在真正还在关注的资源，应该就只有[JavaScript Weekly](http://javascriptweekly.com/)和[奇舞周刊](http://old.75team.com/weekly/)了。对于我来说，已经足够了。
+
 ### 数据结构与算法
+
+对于数据结构与算法这部分，我曾经专门写过一篇文章来讨论这个问题，欢迎拍砖：
+
+ - [为什么我认为数据结构与算法对前端开发很重要？](https://github.com/LeuisKen/leuisken.github.io/issues/2)
+
+做题推荐：
+
+ - [LeetCode](https://leetcode.com/)
+
+阅读推荐：
+
+ - [算法导论](https://book.douban.com/subject/20432061/)
+ - [算法设计与分析基础](https://book.douban.com/subject/26337727/)
+ - [程序员代码面试指南：IT名企算法与数据结构题目最优解](https://book.douban.com/subject/26638586/)
+
+算导没有读过，不过毕竟经典。后面两本我还没有读完，感觉都很不错。
 
 ### HTTP
 
+HTTP2的发展可能会为前端带来很多机会，对这方面感兴趣的同学，可以去看看[Jerry Qu的小站](https://imququ.com/)。
+
+相关资料推荐：
+
+ - [HTTP权威指南](https://book.douban.com/subject/10746113/)
+ - [计算机网络（第6版）](https://book.douban.com/subject/26176870/)（我的大学教材）
+
 ### 后端和数据库
 
-### Linux
+建议前端开发至少了解一门后端框架，至少了解网站是怎么回事，有一个整体的把握。推荐一下之前我写的[WEB开发新人指南](https://segmentfault.com/a/1190000003063481)。
+
+我自己的经历，是先后学习了ThinkPHP和express这两个后端开发框架，写了一些简单的东西。私以为比较重要的点如下：
+
+ - cookie和session
+ - 路由控制
+ - 权限控制
+ - 如何去建表
+
+Node.js的使用现在也已经是前端的必备技能了（注意是使用）。主要就是使用npm、require的路径规则、能够解决报错信息这些。
+
+建议使用nvm用来做Node版本控制，Windows下需要单独处理`node-gyp`的环境问题，详见：[https://github.com/TooTallNate/node-gyp#installation](https://github.com/TooTallNate/node-gyp#installation)。另外，强烈不建议在Windows下进行Node开发。
+
+推荐阅读：
+
+ - [Head First PHP & MySQL](https://book.douban.com/subject/6011680/)
+ - [七天学会NodeJS](http://nqdeng.github.io/7-days-nodejs/)
+ - [Node.js 包教不包会](https://github.com/alsotang/node-lessons)
+
+### Shell
+
+使用终端也是一项必备技能。首先如果你使用git的话，肯定会用到；此外仅仅善用一些基本技巧，就能大大提高你的开发效率。
+
+使用是最好的学习方法，首先，把Windows弃了吧（或者丢到虚拟机里面）。
+
+## 总结与前瞻
+
+可能以后很多新的东西会进入我们的视野，比如：
+
+ - [Google的Progressive Web App](https://developers.google.com/web/fundamentals/getting-started/your-first-progressive-web-app/?hl=zh-cn)
+
+Babel等一系列JS的工具，也让AST（抽象语法树）进入了前端的视野，并且开始了应用：
+
+ - [抽象语法树在 JavaScript 中的应用](http://tech.meituan.com/abstract-syntax-tree.html)
+ - [通过开发 Babel 插件理解抽象语法树（AST）](http://www.zcfy.cc/article/347)
+
+WebGL给了浏览器3D的能力，说不定浏览器上就会运行着类似于虚幻的引擎。WebRTC也已经开始被浏览器支持了，即时通讯的开发也许会变的更加简单。其实这两个东西也不算新了，就是还没有大的应用场景。
+
+框架之战，也没有出现明显的胜利者。
+
+等待VR设备普及起来，我们也许也会在上面写代码？毕竟现在JS跑的地方，已经到嵌入式设备了。
+
+机会和挑战是并存的，而新的东西投入应用，也是一个渐进的过程。放眼未来，还要脚踏实地，能够切实用起来的东西，还是最重要的。
