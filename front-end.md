@@ -65,6 +65,15 @@
 
 说到库的话，我觉得大概有两类：一类相对来说通用一些，如jQuery、lodash；另一类相对专用，如针对数据可视化的D3、Highcharts，针对3D图形的three.js，甚至比较简单的如针对时间处理的moment等等。整体来说，库的上手程度不高，比如jQuery，理解清楚被jQuery的$符包裹的对象和普通DOM的区别及其相互转化，剩下的应该就只有查文档了。
 
+相关推荐：
+
+ - [jQuery 技术内幕](https://book.douban.com/subject/25823709/)
+ - [犀利开发:jQuery内核详解与实践](https://book.douban.com/subject/5063431/)
+ - [UnderScore源码分析](http://www.w3cfuns.com/house/17398/note/class/id/bb6dc3cabae6651b94f69bbd562ff370.html)
+ - [Backbone0.9.1源码分析分析系列](http://www.cnblogs.com/nuysoft/archive/2012/03/14/2395260.html)
+ - [100 行代码实现的 JavaScript MVC 样式框架](http://www.oschina.net/translate/javascript-mvc-style-framework-in-less-than-lines)（翻译有点问题，原文的style我的理解是风格）
+ - [只有20行Javascript代码！手把手教你写一个页面模板引擎](http://blog.jobbole.com/56689/)
+
 ### 设计模式
 
 对设计模式的使用，应该是一种经验的体现。由于个人经验缺乏，我现在对设计模式用的很少，仅仅简单实践过像策略模式、装饰者模式这些。我认为设计模式应该是要用心去学习的一个点，也是提升能力的一个有效途径。
@@ -104,11 +113,16 @@ log3(4)   // 什么都没有log
 
 还有一些非常常用的函数节流技巧（`throttle`、`debounce`）、封装一些原生函数（如`fetch`），都会用到这相关的技巧。在ES7中，提供了Decorators相关的语法，让你更方便的使用这些技巧。（这其实就是JavaScript中的装饰者模式实践）
 
+ - [ES7 Decorator 装饰者模式](http://taobaofed.org/blog/2015/11/16/es7-decorator/)
+
 许多框架在设计上借鉴了函数式的技巧，比较明显的就是Redux，包括在Redux的源码中，也遍布各种函数式的思维。rxjs更是将这种思维贯彻到了一个极致。我觉得将来rxjs包括cycle.js肯定会在框架中占据一席之地，目前来说，至少RxJava发展的还是挺好的。
 
 推荐：
 
+ - [编程语言的基石——Lambda calculus](http://liujiacai.net/blog/2014/10/12/lambda-calculus-introduction/)
  - [JS函数式编程指南](https://www.gitbook.com/book/llh911001/mostly-adequate-guide-chinese/details)
+ - [延续性究竟是什么？](http://www.zcfy.cc/article/365)
+ - [用 JavaScript 实现单步调试](http://www.zcfy.cc/article/363)
 
 ### 底层
 
@@ -148,6 +162,10 @@ JavaScript能有今天的发展跟V8是脱不了关系的。很多讲解JavaScri
  - w3cplus[http://www.w3cplus.com/](http://www.w3cplus.com/)
  - 前端乱炖[http://www.html-js.com/](http://www.html-js.com/)
 
+其他资料推荐：
+
+ - [理解WebKit和Chromium](http://www.ituring.com.cn/minibook/705)
+
 ## 开发与调试
 
 准备好了基础知识，让我们简单了解一下开发与调试相关的东西。在这一部分中，工具发挥着很大的作用。
@@ -167,6 +185,7 @@ JavaScript能有今天的发展跟V8是脱不了关系的。很多讲解JavaScri
 
  - [alloyteam代码规范](http://alloyteam.github.io/CodeGuide/)
  - [airbnb代码规范](https://github.com/airbnb/javascript)
+ - [前端代码规范 及 最佳实践](http://blog.jobbole.com/79075/)
 
 其他团队的规范未必适合自己，只要团队成员达成共识，就是好的规范。
 
@@ -207,9 +226,11 @@ JavaScript能有今天的发展跟V8是脱不了关系的。很多讲解JavaScri
 推荐使用git，毕竟GitHub对于开发者已经如同简历、名片一般。
 
  - [廖雪峰的Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+ - [Pro Git 简体中文版](http://iissnan.com/progit/)
  - [基于git的源代码管理模型——git flow](http://www.ituring.com.cn/article/56870)
  - [我的提交信息规范](http://yanhaijing.com/git/2016/02/17/my-commit-message/)
  - [多 SSH Key 管理技巧与 Git 多账户登录问题](http://www.barretlee.com/blog/2016/03/09/config-in-ssh-after-troubling-git-connection/)
+ - [git子模块](https://yuguo.us/weblog/git-submodule/)
 
 ### 测试
 
@@ -225,13 +246,14 @@ JavaScript能有今天的发展跟V8是脱不了关系的。很多讲解JavaScri
 
 影响前端性能的问题有很多，比如网络速度太慢会影响首屏时间；代码的一些写法也会影响到浏览器的渲染；还有一点我觉得很值得注意的就是内存泄漏。相关的议题都有很多工具去处理，如果前面Chrome开发者工具部分有好好研究的话，现在对性能问题应该也有一些心得了。
 
+关于加载：
+
+ - [大公司里怎样开发和部署前端代码？](https://www.zhihu.com/question/20790576)
+ - [bigpipe性能优化](http://www.alloyteam.com/2015/03/bigpipe%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/)
+
 关于渲染：
 
  - [渲染性能](https://github.com/sundway/blog/issues/2)
-
-关于资源加载：
-
- - [大公司里怎样开发和部署前端代码？](https://www.zhihu.com/question/20790576)
 
 关于内存泄漏：
 
@@ -239,6 +261,7 @@ JavaScript能有今天的发展跟V8是脱不了关系的。很多讲解JavaScri
 
 其他资料推荐：
 
+ - [前端优化不完全指南](https://aotu.io/notes/2016/03/16/optimization/)
  - [JavaScript 性能优化杀手](http://dev.zm1v1.com/2015/08/19/javascript-optimization-killers/)
  - [编写高性能JavaScript](http://www.alloyteam.com/2012/11/performance-writing-efficient-javascript/)
  - [了解 JavaScript 应用程序中的内存泄漏](http://www.ibm.com/developerworks/cn/web/wa-jsmemory/)
@@ -289,6 +312,7 @@ JavaScript能有今天的发展跟V8是脱不了关系的。很多讲解JavaScri
 
  - [移动web问题小结](http://www.alloyteam.com/2015/06/yi-dong-web-wen-ti-xiao-jie/)
  - [手机淘宝的flexible设计与实现](http://www.html-js.com/article/2402)
+ - [使用Flexible实现手淘H5页面的终端适配](https://github.com/amfe/article/issues/17)
 
 移动端和PC另一个很大的不同就是调试，真机调试是必不可少的环节，也有许多相关的解决方案：
 
@@ -323,6 +347,19 @@ JavaScript能有今天的发展跟V8是脱不了关系的。很多讲解JavaScri
 
 对于这个领域，我就更是陌生了。如果有同学愿意赐教，感激不尽。
 
+#### 3D场景
+
+WebGL给了浏览器3D的能力，Three.js则对相关的API进行了封装。这相关的业务可能会出现在游戏中，也可能会出现在一些展示性质的页面上。不过目前主要的项目中，WebGL相关的技术还没有大的应用场景。也许将来显卡性能和浏览器支持水平发展到了足够的高度，像Unreal一样的引擎，也许也会出现在浏览器之中。
+
+当然实现3D也可能不需要JavaScript参与，CSS 3D现在应用的也很多。常见全景图展示效果，为了减小复杂度，经常会采用CSS来创建3D场景。
+
+相关资料推荐：
+
+ - [Three.js入门指南](http://www.ituring.com.cn/minibook/792)
+ - [WebGL教程系列](https://www.script-tutorials.com/?s=WebGL+With+Three.js)
+ - [打造H5里的“3D全景漫游”秘籍](https://isux.tencent.com/3d.html)
+ <!-- - [细数html5几种360度全景展示方法](http://pan.baidu.com/s/1jIbHGv8) -->
+
 ## 面试
 
 面试这件事是围绕人来的，主要的因素也在人。听过一句话，大意是：面试就是在寻找将来的同事。我认为，面试就是对自己的表达，需要一种表达的能力在里面，会表达的人，总是会占据很大的优势。
@@ -354,6 +391,10 @@ JavaScript能有今天的发展跟V8是脱不了关系的。很多讲解JavaScri
  - [人月神话](https://book.douban.com/subject/2230248/)
  - [数学之美 （第二版）](https://book.douban.com/subject/26163454/)
  - [黑客与画家](https://book.douban.com/subject/6021440/)
+
+其他资源推荐：
+
+ - [如何重构一个大型历史项目——百度经验改版总结](http://yanhaijing.com/program/2016/04/14/how-to-reconstruct-a-large-historical-project/)
 
 ## 其他
 
@@ -416,6 +457,7 @@ Node.js的使用现在也已经是前端的必备技能了（注意是使用）�
  - [Head First PHP & MySQL](https://book.douban.com/subject/6011680/)
  - [七天学会NodeJS](http://nqdeng.github.io/7-days-nodejs/)
  - [Node.js 包教不包会](https://github.com/alsotang/node-lessons)
+ - [nodejs stream 手册](https://github.com/jabez128/stream-handbook)
 
 ### Shell
 
@@ -434,7 +476,7 @@ Babel等一系列JS的工具，也让AST（抽象语法树）进入了前端的�
  - [抽象语法树在 JavaScript 中的应用](http://tech.meituan.com/abstract-syntax-tree.html)
  - [通过开发 Babel 插件理解抽象语法树（AST）](http://www.zcfy.cc/article/347)
 
-WebGL给了浏览器3D的能力，说不定浏览器上就会运行着类似于虚幻的引擎。WebRTC也已经开始被浏览器支持了，即时通讯的开发也许会变的更加简单。其实这两个东西也不算新了，就是还没有大的应用场景。
+WebRTC也已经开始被浏览器支持了，即时通讯的开发也许会变的更加简单。
 
 框架之战，也没有出现明显的胜利者。
 
