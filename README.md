@@ -157,6 +157,7 @@
  - [css3pie](http://css3pie.com/)
  - [json-generator](http://beta.json-generator.com/)
  - [egghead.io](https://egghead.io/)
+ - [各种搜索引擎集合](http://so.chongbuluo.com/)
 
 ##WEB工具推荐-By Vizards
  - [SM.MS - https图床](https://sm.ms/)
